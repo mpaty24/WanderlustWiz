@@ -1,5 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {
 
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
+    font-weight: 600;
+    color: #3a3a3a;
+}
 
+/* headings and logo */
+
+h1,
+h2 {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: DodgerBlue;
+}
+
+
+#logo {
+    float: left;
+    font-size: 280%;
+}
+
+/* menu */
+
+#menu {
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
+#menu,
+#logo {
+    line-height: 75px;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* hero image */
+
+#hero-outer {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 800px;
+    width: 100%;
+    background: url('../images/japan-2014618_1920.jpg') no-repeat center center;
+
+    /* effect */
+    animation-name: hero-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* creates the zoom */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
 }
