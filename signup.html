@@ -1,9 +1,55 @@
-.buttonplay {
+<div class="question-area"></div>
+
+<div class="score-area">
+  <p class="scores">Correct response <span id="score">0</span></p>
+  <p class="scores">Incorrect response<span id="score">0</span></p>
+</div>
+
+
+<div class="buttons">
+    <button class="quit">Exit Quiz</button>
+    <button class="restart">Keep Playing</button>
+</div>
+</div>
+</div>
+<!-- Questions Area -->
+<div class="question-area">
+    <span id="question0">Question 0</span>
+    <span id="question1">Question 1</span>
+    <span id="question2">Question 2</span>
+    <span id="question3">Question 3</span>
+    <span></span>
+    <p class="answer-message">Enter Answer:</p>
+    <input id="answer-box" type="number">
+</div>
+<button data-type="submit" class="btn btn--gray">Submit Answer</button>
+</div>
+
+<!-- Score Area -->
+<div class="score-area">
+    <p class="scores">Correct Answers <span id="score">0</span></p>
+    <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+</div>
+</div>
+</div>
+</div>
+
+    <!-- User area -->
     
-    padding: 15px 30px;
-    
-    margin: 4px 2px;
-    
-    position: absolute;
-    
-}
+    <div class="user-area">
+        <h3>Please enter Your Username</h3>
+        <input type="text" id="usernameInput">
+        <button onclick="displayUsername()"><span>Submit</span></button>
+        <p id="displayArea"></p>
+    </div>
+
+            <script>
+                function displayUsername() {
+                    // Get the input field with the username value
+                    const username = document.getElementById("usernameInput").value;
+
+                    // Display the username on the screen before start playing
+                    const displayElement = document.getElementById("displayArea");
+                    displayElement.textContent = `Your Username is: ${username}`;
+                }
+            </script>
