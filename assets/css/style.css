@@ -294,14 +294,15 @@ footer {
 .game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     height: 65vh;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    border: 5px solid black;
+    border: 2px solid black;
     border-radius: 6px;
     box-shadow: 0 0 2px 2px;
     display: flex;
@@ -339,4 +340,41 @@ footer {
 
 .hide {
     display: none;
+}
+
+
+/* question are */
+
+.questions-area {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.question {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.answers-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.nextQuestion {
+    margin-top: 32px;
+}
+
+.answerButton {
+    font-size: 16px;
+    background-color: #82e0aa;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    ;
 }
