@@ -44,10 +44,7 @@
         <!-- User area -->
 
             <div class="user-area">
-            <h3>Please enter Your Username</h3>
-            <input type="text" id="usernameInput">
-                <button onclick="displayUsername()"><span>Submit</span></button>
-            <p id="displayArea"></p>
+      
             </div>
 
 
@@ -62,7 +59,7 @@
             <div class="quiz_rules_title"><span> Quiz Instructions</span></div>
             <div class="rules_list">
                 <ol class="list">
-                <div class="rule"><li>Welcome to the Wanderlust Wiz!</li></div>
+                <div class="rule"><li>Welcome to Wanderlust Wiz!</li></div>
                 <div class="rule"><li>Start by exploring the world from the comfort of your seat. Answer questions and test your travel knowledge.</li></div>
                 <div class="rule"><li>Your goal is to answer as many travel-related questions correctly as possible and earn points.</li></div>
                 <div class="rule"><li>Keep in mind have only <span>20 seconds</span> per each question.Pay attention to the timer!</li></div>
@@ -79,27 +76,28 @@
             <!-- start Question area -->
 
                 <div class="questions-area hide">
-                    <span class="question">Your question here</span>
+                    <span class="question">Quiz question here</span>
                     <div class="answers-area">
-                        <button class="answerButton">Answer 1</button>
-                        <button class="answerButton">Answer 2</button>
-                        <button class="answerButton">Answer 3</button>
-                        <button class="answerButton">Answer 4</button>
+                        <button type="button" class="answer buttona">Answer 1</button>
+                        <button type="button" class="answer buttona">Answer 2</button>
+                        <button type="button" class="answer buttona">Answer 3</button>
+                        <button type="button" class="answer buttona">Answer 4</button>
                     </div>
-                    </di>
+
                     <div class="controls-area">
-                        <button class="buttonplay">Start Quiz</button>
                         <button class="nextQuestion hide">Next question</button>
             
                     </div>
+
+                    <div class="score-area">
+                        <p class="scores">Correct response <span id="score">0</span></p>
+                        <p class="scores">Incorrect response<span id="score">0</span></p>
+                      </div>
+                </div>
                 </div>
             </div>
-</div>
-</div>
-      
-
-
             
+
      <footer>
         <ul class = "social-media">
             <li>
@@ -123,6 +121,7 @@
                     aria-label="Visit our TikTok page"><i class="fab fa-tiktok"></i></a>
             </li>
         </ul>
+        <p class="copyright">Copyright © Wanderlust Wiz 2023</p>
     </footer>
 
         <script>
