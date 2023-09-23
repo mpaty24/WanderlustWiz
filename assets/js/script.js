@@ -4,15 +4,18 @@ const $quizRules = document.querySelector(".quiz_rules");
 const $nextQuestion = document.querySelector(".nextQuestion");
 const $answersArea = document.querySelector(".answers-area");
 const $questionQuiz = document.querySelector(".question");
+const questionDisplay = document.getElementById('question');
+const countdownDisplay = document.getElementById('countdown');
 
 
+let countdownTime = 10; 
+let countdownInterval;
 
 $startQuizButton.addEventListener("click", startQuiz);
 $nextQuestion.addEventListener("click", displaynextQuestion);
 
 let currentQuestionIndex = 0;
 let totalCorrect = 0
-
 
 function startQuiz() {
     $quizRules.classList.add("hide");
@@ -58,9 +61,11 @@ const answerClickedByPlayer = event.target
 
 if (answerClickedByPlayer.dataset.correct) {
     document.body.classList.add("correct")
+    incrementScore();
     totalCorrect++
   } else {
     document.body.classList.add("incorrect") 
+    incrementWrongAnswer();
   }
 
 document.querySelectorAll(".answer").forEach(button => {
@@ -70,7 +75,7 @@ document.querySelectorAll(".answer").forEach(button => {
         button.classList.add("correct")
       } else {
         button.classList.add("incorrect")
-      }
+          }
     })
     
     $nextQuestion.classList.remove("hide")
@@ -111,6 +116,48 @@ document.querySelectorAll(".answer").forEach(button => {
     </button>
   `
 }
+
+/* get the currect score */
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+/* get the incorrect score */
+
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById("wrong").innerText);
+    document.getElementById("wrong").innerText =  ++oldScore;
+}
+
+/* countdown */
+
+function startCountdown() {
+    clearInterval(countdownInterval); 
+    countdownTime = 60; 
+    updateCountdown(); 
+    countdownInterval = setInterval(updateCountdown, 1000); 
+}
+function updateCountdown() {
+    countdownDisplay.textContent = countdownTime;
+
+    if (countdownTime === 0) {
+        clearInterval(countdownInterval);
+        countdownDisplay.textContent = 'Time\'s up!';
+    } else {
+        countdownTime--;
+    }
+}
+// Function to move to the next question
+function nextQuestioncount() {
+    clearInterval(countdownInterval); // totally clear the countdown
+    questionDisplay.textContent = `Question ${questionNumber}`;
+    startCountdown(); 
+}
+
+startCountdown();
+
 
 
 const questions = [
@@ -189,8 +236,8 @@ const questions = [
     {
         question: "In which country would you find the historic site of Machu Picchu?",
         answers: [
-            { text: "Brazil", correct: true },
-            { text: "Peru", correct: false },
+            { text: "Brazil", correct: false },
+            { text: "Peru", correct: true },
             { text: "Argentina", correct: false },
             { text: "Chile", correct: false },
         ]

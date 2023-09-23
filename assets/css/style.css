@@ -194,7 +194,7 @@ h2 {
 /* footer */
 
 footer {
-    height: 150px;
+    height: 120px;
     font-size: 24px;
     font-weight: 100px;
 }
@@ -216,7 +216,7 @@ footer {
 
 .copyright {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 /* small screen sizes maximum width of 767p */
@@ -360,12 +360,16 @@ footer {
 
 .rules_list {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .list {
+    text-align: left;
+    margin-left: 20px;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 
@@ -430,7 +434,7 @@ footer {
     border-radius: 6px;
     height: 48px;
     padding: 0 10px;
-    padding-top: 5px;
+    padding-top: 10px;
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -468,6 +472,10 @@ footer {
     font-weight: bold;
 }
 
+#wrong {
+color: red;
+}
+
 .scores {
     display: inline-block;
     padding: 25px;
@@ -494,4 +502,19 @@ footer {
 .QuizFinal span {
     display: block;
     margin-top: 8px;
+}
+
+/* Add some basic styles for the countdown container */
+#countdown{
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the countdown timer itself */
+#countdown {
+    font-size: 24px;
 }
