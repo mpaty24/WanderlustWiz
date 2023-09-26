@@ -80,6 +80,8 @@ Ultimately, the user will receive a concluding message along with the opportunit
 # About us page
 
 About page
+
+The About us page will display all users name, position and BIO.
 <div align="center">
 <img src="assets/images/aboutus.png" width="400px"</img> 
 </div>
@@ -97,6 +99,10 @@ About page
 # CSS
 
 # Acessibility
+Acessibility has been tested on WAVE Web Accessibility Evaluation Tool and no errors were found.
+<div align="center">
+<img src="assets/images/acessibility2.png" width="400px"</img> 
+</div>
 
 # Deployment
 Wanderlust Wiz website is deployed to GitHub pages. The deployment steps taken:
