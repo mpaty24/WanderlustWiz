@@ -1,39 +1,83 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+Welcome to Wanderlust Wiz website!
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+# Wanderlust Wiz
+ Wanderlust Wiz is a captivating quiz website designed to ignite the wanderlust in every traveler's heart. Our platform intende to offer a diverse range of travel-themed quizzes that will transport you to exotic destinations, test your travel knowledge, and help you discover your inner travel personality. Whether you're a seasoned globetrotter or a novice explorer, Wanderlust Wiz is your passport to an exciting world of travel trivia and adventure. Join us on this virtual journey, explore the world, and challenge your wanderlust with our fun and informative quizzes!
 
-## Codeanywhere Reminders
+<div align="center">
+<img src="assets/images/mainpage.png" width="400px"</img> 
+</div>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# Creator
+Code Institute
+Student: Marcia Patricia Frizen
+JavaScript project
+Year 2023
 
-`python3 -m http.server`
+# Features
+The application intends to attract users to play quizzes online through a wide array of engaging features designed to enhance their quiz-taking experience. These features include:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+# Existing Features
+ Our quiz is designed to be interactive and visually appealing, featuring stunning images and multimedia elements that immerse users in the world of travel.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+# Navigation Bar
+The navigation bar is featured on all four pages, with the Quiz name "Wanderlust WIz" on the left corner with the logo and links to other pages of the website on the right. The fully responsive navigation bar includes links to the Logo, Home page, Quiz page, About us and page and is identical on each page to allow for easy navigation.
 
-`http_server`
+The navbar will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Responsive Design: Our website features a responsive design that adapts seamlessly to various screen sizes, from desktop monitors to tablets and smartphones. This means that no matter what device you're using, the navbar remains accessible and user-friendly.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+* Clear Menu Structure: The navbar prominently displays a clear and intuitive menu structure, making it easy for users to find their way around the website. It includes options such as "Home," "Quizzes," "Categories," "Leaderboards," "Profile," and more, ensuring that users can access their desired content with just a click.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Mobile-Friendly Navigation: On smaller screens, such as smartphones, the navbar may transform into a collapsible menu, accessible via a hamburger icon. This streamlined mobile navigation ensures a clutter-free and user-friendly experience on mobile devices.
 
-To log into the Heroku toolbelt CLI:
+* Consistent Layout: The navbar maintains a consistent layout across all pages of the website, helping users feel confident in their ability to navigate without confusion.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Landing Page Image
+1. The landing page in the header section includes h1 heading.
+2. Welcoming message.
+3. Image to grab user's attention extracted from pexels.com.
+4. There is also a call to action button to Play redirecting to Quiz page.
+<div align="center">
+<img src="assets/images/LandingPage.png" width="400px"</img> 
+</div>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# The Footer
+The footer help users with a consistent point of reference/contact. The footer contains a copyright notice, link to social media icons (using font awesome icons). The link to social media redirects to a the respective social media websites once clicked.
+<div align="center">
+<img src="assets/images/footer.png" width="400px"</img> 
+</div>
 
----
+# Quiz Page
+On the Quiz page, users can explore a variety of questions related to travel and places and must choose the correct answers within 60-seconds for 10 questions.
 
-Happy coding!
+First, the user will receive a set of instructions to follow.
+<div align="center">
+<img src="assets/images/instructions.png" width="400px"</img> 
+</div>
+
+After reading all instructions the user will START QUIZ.
+<div align="center">
+<img src="assets/images/questions.png" width="400px"</img> 
+</div>
+
+The user will see a question displayed and four answers to select the correct response. As soon as the question is answered, there will be a check for correct and incorrect responses, with the count displayed. If the user clicks on the wrong response, the button and background turn red; whereas, if the user selects the correct response, both the background and button turn green.
+
+Ultimately, the user will receive a concluding message along with the opportunity to make another attempt.
+
+*Great Performance :O)
+*PlayerPeformance >= 70
+*Good Performance ;)
+*PlayerPeformance >= 50
+*Only Good
+*Poor performance :(
+<div align="center">
+<img src="assets/images/result.png" width="400px"</img> 
+</div>
+
+# About us page
+
+# Non-Existing Features
+# Testing
