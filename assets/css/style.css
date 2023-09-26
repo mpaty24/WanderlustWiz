@@ -1,255 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-
-    font-family: ui-monospace;
-    font-weight: 600;
-    color: #3a3a3a;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-/* headings and logo */
-
-h1,
-h2 {
-    font-family: ui-monospace;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #FF00FF;
-}
-
-
-#logo {
-    float: left;
-    font-size: 280%;
-    margin-left: 15px;
-}
-
-/* menu */
-
-#menu {
-    font-size: 24px;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-#menu,
-#logo {
-    line-height: 75px;
-}
-
-#menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#menu a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 24px;
-}
-
-/* hero image */
-
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#cover-text,
-#cover-text h2 {
-    color: white;
-}
-
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url('../images/japan-2014618_1920.jpg') no-repeat center center;
-
-    /* effect */
-    animation-name: hero-zoom;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    display: flex;
-}
-
-/* button play */
-
-.button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-}
-
-.buttonplay {
-    border: none;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 26px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-weight: 600;
-}
-
-.nextQuestion {
-    border: none;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 26px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-weight: 600;
-}
-
-.buttonplay {
-    background-color: #FF00FF;
-}
-
-.nextQuestion {
-    background-color: #FF00FF;
-}
-
-.buttonplay:hover {
-    background-color: #2ecc71;
-}
-
-.nextQuestion:hover {
-    background-color: #2ecc71;
-}
-
-/* Green */
-
-/* creates the zoom */
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    to {
-        transform: scale(1.1);
+    body {
+
+        font-family: ui-monospace;
+        font-weight: 600;
+        color: #3a3a3a;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
-}
 
+    /* headings and logo */
 
-/*hero text center */
-
-.container {
-    position: relative;
-    text-align: center;
-    border-radius: 6px;
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    /* Text color */
-    font-size: 24px;
-    /* Text font size */
-    font-weight: bold;
-    /* Text font weight */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Background color with transparency */
-    padding: 10px 20px;
-    /* Adjust padding as needed */
-    justify-content: center;
-}
-
-
-/* footer */
-
-footer {
-    height: 120px;
-    font-size: 24px;
-    font-weight: 100;
-}
-
-.social-media {
-    text-align: center;
-}
-
-.social-media>li {
-    display: inline;
-}
-
-.social-media i {
-    font-size: 180%;
-    margin: 1%;
-    padding: 5%;
-    color: #2ecc71;
-}
-
-.copyright {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-/* small screen sizes maximum width of 767p */
-
-@media screen and (max-width: 767px) {
-    #menu {
-        width: 65%;
-        margin-left: 65px;
-        font-size: 100%;
+    h1,
+    h2 {
+        font-family: ui-monospace;
+        text-transform: uppercase;
         letter-spacing: 1px;
+        color: #FF00FF;
     }
 
+
+    #logo {
+        float: left;
+        font-size: 280%;
+        margin-left: 15px;
+    }
+
+    /* menu */
+
+    #menu {
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
 
     #menu,
     #logo {
-        line-height: 50px;
+        line-height: 75px;
     }
 
-    #logo {
-        font-size: 36px;
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 
-    .text {
-        font-size: 18px;
-        margin: 0 auto;
-        height: auto;
-        text-align: center;
+    .active {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    #menu li {
+        float: right;
+        list-style-type: none;
+        margin-right: 30px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 24px;
+    }
+
+    /* hero image */
+
+    #hero-outer {
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #cover-text,
+    #cover-text h2 {
+        color: white;
+    }
+
+    #hero-image {
+        height: 600px;
+        width: 100%;
+        background: url('../images/japan-2014618_1920.jpg') no-repeat center center;
+
+        /* effect */
+        animation-name: hero-zoom;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        padding: 30px 0;
+    }
 
+    /* button play */
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
     }
 
     .buttonplay {
@@ -268,297 +117,448 @@ footer {
         font-weight: 600;
     }
 
-}
-
-
-.copyright {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-/* Styles for screens between 768px and 991px (tablets) */
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    #menu {
-        width: 100%;
+    .nextQuestion {
+        border: none;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+        padding: 8px 16px;
+        font-weight: 600;
     }
-}
 
-/* Styles for screens with a min width of 992px (usually desktops and laptops) */
-@media screen and (min-width: 992px) {
-    #menu {
-        width: 100%;
+    .buttonplay {
+        background-color: #FF00FF;
     }
-}
 
-/* Styles for screens with a minimum width of 1200px (large desktops and beyond) */
-@media screen and (min-width: 1200px) {
-
-    #menu {
-        width: 100%;
+    .nextQuestion {
+        background-color: #FF00FF;
     }
-}
+
+    .buttonplay:hover {
+        background-color: #2ecc71;
+    }
+
+    .nextQuestion:hover {
+        background-color: #2ecc71;
+    }
+
+    /* Green */
+
+    /* creates the zoom */
+
+    @keyframes hero-zoom {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
 
 
-/* Quiz page */
+    /*hero text center */
+
+    .container {
+        position: relative;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        /* Text color */
+        font-size: 24px;
+        /* Text font size */
+        font-weight: bold;
+        /* Text font weight */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Background color with transparency */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        justify-content: center;
+    }
+
+
+    /* footer */
+
+    footer {
+        height: 120px;
+        font-size: 24px;
+        font-weight: 100;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .social-media>li {
+        display: inline;
+    }
+
+    .social-media i {
+        font-size: 180%;
+        margin: 1%;
+        padding: 5%;
+        color: #2ecc71;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    /* small screen sizes maximum width of 767p */
+
+    @media screen and (max-width: 767px) {
+        #menu {
+            width: 65%;
+            margin-left: 65px;
+            font-size: 100%;
+            letter-spacing: 1px;
+        }
+
+
+        #menu,
+        #logo {
+            line-height: 50px;
+        }
+
+        #logo {
+            font-size: 36px;
+        }
+
+        .text {
+            font-size: 18px;
+            margin: 0 auto;
+            height: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 30px 0;
+
+        }
+
+        .buttonplay {
+            border: none;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 26px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            padding: 8px 16px;
+            font-weight: 600;
+        }
+
+    }
+
+
+    .copyright {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /* Styles for screens between 768px and 991px (tablets) */
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        #menu {
+            width: 100%;
+        }
+    }
+
+    /* Styles for screens with a min width of 992px (usually desktops and laptops) */
+    @media screen and (min-width: 992px) {
+        #menu {
+            width: 100%;
+        }
+    }
+
+    /* Styles for screens with a minimum width of 1200px (large desktops and beyond) */
+    @media screen and (min-width: 1200px) {
+
+        #menu {
+            width: 100%;
+        }
+    }
+
+
+    /* Quiz page */
 
 
 
-.logo1 {
-    margin-top: 100px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    .logo1 {
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-}
+    }
 
-.heading {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
+    .heading {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 
-.game-area {
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    width: 90%;
-    max-width: 1000px;
-    height: 65vh;
-    max-height: 800px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-    border: 2px solid black;
-    border-radius: 6px;
-    box-shadow: 0 0 2px 2px;
-    display:grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .game-area {
+        background-color: #E6ECF0;
+        box-sizing: border-box;
+        width: 90%;
+        max-width: 1000px;
+        height: 65vh;
+        max-height: 800px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 6px;
+        box-shadow: 0 0 2px 2px;
+        display:grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.user-area {
-    padding-top: 100px;
-    padding-bottom: 20px;
-    justify-content: center;
-    text-align: center;
-}
+    .user-area {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
 
-.quiz_rules_title {
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    text-transform: uppercase;
+    .quiz_rules_title {
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        color: red;
+        font-size: 36px;
+    }
+
+    .rules_list {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    .hide {
+        display: none;
+    }
+
+
+    /* question are */
+
+    .questions-area {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+    }
+
+    .question {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .answers-area {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .buttona:disabled {
+        cursor: not-allowed;
+    }
+
+    .answer:disabled {
+        cursor: not-allowed;
+    }
+
+    .nextQuestion {
+        margin-top: 32px;
+    }
+
+    .answer {
+        font-size: 50px;
+        background-color: white;
+        border: 0;
+        border-radius: 6px;
+        height: 38px;
+        justify-content: center;
+    }
+
+
+    .buttona {
+        background-color: #3498db;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: bold;
+        border: 0;
+        border-radius: 6px;
+        height: 48px;
+        padding: 0 10px;
+        padding-top: 10px;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    
+        transition: filter 0.1s;
+    }
+    
+    .buttona:not(:disabled):hover {
+        filter: brightness(0.8);
+    }
+    .answer:not(:disabled):hover {
+        filter: brightness(0.8);
+    }
+
+    .correct {
+        background-color: #82e0aa;
+
+    }
+
+    .incorrect {
+        background-color: rgb(255, 150, 150);
+    }
+
+
+    /* score-area */
+
+    .score-area {
+        margin: 5px auto;
+        width: 60%;
+        font-size: 1.2rem;
+    }
+
+    #score {
+        color: green;
+        font-weight: bold;
+    }
+
+    #wrong {
     color: red;
-    font-size: 36px;
-}
+    }
 
-.rules_list {
-    text-align: left;
-    margin-left: 20px;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+    .scores {
+        display: inline-block;
+        padding: 25px;
+    }
 
-.list {
-    text-align: left;
-    margin-left: 20px;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+    .score-area {
+        width: 100%;
+    }
 
-
-.hide {
-    display: none;
-}
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
 
 
-/* question are */
+    /* final */
 
-.questions-area {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+    .QuizFinal {
+        font-size: 20px;
+        text-align: center;
+    }
 
-}
+    .QuizFinal span {
+        display: block;
+        margin-top: 8px;
+    }
 
-.question {
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 5px;
-}
+    /* Add some basic styles for the countdown container */
+    #countdown{
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: black;
+        text-align: center;
+    }
 
-.answers-area {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.buttona:disabled {
-    cursor: not-allowed;
-  }
-
-  .answer:disabled {
-    cursor: not-allowed;
-  }
-
-.nextQuestion {
-    margin-top: 32px;
-}
-
-.answer {
-    font-size: 50px;
-    background-color: white;
-    border: 0;
-    border-radius: 6px;
-    height: 38px;
-    justify-content: center;
-}
+    /* Style the countdown timer itself */
+    #countdown {
+        font-size: 24px;
+        border-radius: 50%;
+        width: 50px; 
+        height: 50px;
+        line-height: 40px;
+        border: 5px solid #3498db;
+        background-color: white;
+        margin-bottom: auto;
+        margin-top: auto;
+        text-align: center;
+        margin-left: auto;
+    }
 
 
-.buttona {
-    background-color: #3498db;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 23px;
-    font-weight: bold;
-    border: 0;
-    border-radius: 6px;
-    height: 48px;
-    padding: 0 10px;
-    padding-top: 10px;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  
-    transition: filter 0.1s;
-  }
-  
-  .buttona:not(:disabled):hover {
-    filter: brightness(0.8);
-  }
-  .answer:not(:disabled):hover {
-    filter: brightness(0.8);
-  }
+    /*about us page */
 
-  .correct {
-    background-color: #82e0aa;
-
-  }
-
-  .incorrect {
-    background-color: rgb(255, 150, 150);
-  }
+    #aboutus-container {
+        width: 100%;
+        height: 400px;
+    }
 
 
-  /* score-area */
-
-  .score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#wrong {
-color: red;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-.score-area {
-    width: 100%;
-}
-
-.scores {
-    margin: 0.5em auto;
-    display: block;
-    padding: 5px;
-}
-
-
-/* final */
-
-.QuizFinal {
-    font-size: 20px;
-    text-align: center;
-}
-
-.QuizFinal span {
-    display: block;
-    margin-top: 8px;
-}
-
-/* Add some basic styles for the countdown container */
-#countdown{
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: black;
-    text-align: center;
-}
-
-/* Style the countdown timer itself */
-#countdown {
-    font-size: 24px;
-    border-radius: 50%;
-    width: 50px; 
-    height: 50px;
-    line-height: 40px;
-    border: 5px solid #3498db;
-    background-color: white;
-    margin-bottom: auto;
-    margin-top: auto;
-    text-align: center;
-    margin-left: auto;
-}
-
-
-/*about us page */
-
-#aboutus-container {
-    width: 100%;
-    height: 400px;
-}
-
-
-.aboutus {
-    width: 100%;
-    max-height: 500px;
-    max-width: 1000px;
-    text-align: left;
-    font-size: 18px;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 120px;
-    margin-bottom: 100px;
-    padding: 1%;
-    border: 2px solid black;
-    border-radius: 50px;
-    box-shadow: 0 0 2px 2px;
-    display:grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    background-color: rgb(173, 216, 230); 
-}
+    .aboutus {
+        width: 100%;
+        max-height: 500px;
+        max-width: 1000px;
+        text-align: left;
+        font-size: 18px;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 50px;
+        box-shadow: 0 0 2px 2px;
+        display:grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        background-color: rgb(173, 216, 230); 
+    }
 
 
 
