@@ -79,5 +79,38 @@ Ultimately, the user will receive a concluding message along with the opportunit
 
 # About us page
 
+About page
+<div align="center">
+<img src="assets/images/aboutus.png" width="400px"</img> 
+</div>
+
 # Non-Existing Features
+
 # Testing
+
+# Bugs
+
+# Validator testing
+
+# HTML
+
+# CSS
+
+# Acessibility
+
+# Deployment
+Wanderlust Wiz website is deployed to GitHub pages. The deployment steps taken:
+
+1. Access GitHub repository Wanderlus Wiz Quiz
+2. Go to the Settings tab
+3. From the source section drop-down menu, select the Master Branch
+4. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+5. The live link can be found here:
+   https://mpaty24.github.io/WanderlustWiz/ 
+
+# Credits 
+The icons in the footer were taken from Font Awesome.
+
+## Media
+All the pictures included on Wanderlust Wiz project are from 
+https://www.pexels.com/ 
