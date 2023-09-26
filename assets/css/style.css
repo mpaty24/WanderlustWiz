@@ -219,62 +219,7 @@
         margin-bottom: 5px;
     }
 
-    /* small screen sizes maximum width of 390p */
     
-    @media screen and (max-width: 390px) {
-        #menu {
-            width: 100%;
-            margin-left: 10px;
-            font-size: 20px;
-            letter-spacing: 0.5px;
-        }
-
-        #menu,
-        #logo {
-            line-height: 40px;
-        }
-
-        #logo {
-            font-size: 28px;
-        }
-
-        .text {
-            font-size: 16px;
-            margin: 0 auto;
-            height: auto;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            padding: 30px 0;
-
-        }
-
-        .buttonplay {
-            border: none;
-            color: white;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 26px;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-            margin-top: 10px;
-            padding: 8px 16px;
-            font-weight: 600;
-        }
-
-    }
-
-    .copyright {
-        text-align: center;
-        padding-bottom: 10px;
-    }
-
-
     /* small screen sizes maximum width of 767p */
 
     @media screen and (max-width: 767px) {
