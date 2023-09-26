@@ -6,7 +6,7 @@
 
 body {
 
-    font-family: ui-monospace, SFMono-Regular, SF Mono;
+    font-family: ui-monospace;
     font-weight: 600;
     color: #3a3a3a;
     height: 100vh;
@@ -18,7 +18,7 @@ body {
 
 h1,
 h2 {
-    font-family: ui-monospace, SFMono-Regular, SF Mono;
+    font-family: ui-monospace;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #FF00FF;
@@ -196,7 +196,7 @@ h2 {
 footer {
     height: 120px;
     font-size: 24px;
-    font-weight: 100px;
+    font-weight: 100;
 }
 
 .social-media {

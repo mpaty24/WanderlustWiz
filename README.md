@@ -86,17 +86,35 @@ The About us page will display all users name, position and BIO.
 <img src="assets/images/aboutus.png" width="400px"</img> 
 </div>
 
-# Non-Existing Features
+# Future features
+
+The objective is to systematically enhance the educational experience by creating a greater number of quiz modules categorized according to distinct subject matter and geographical regions, while also incorporating visual elements within the quiz interface.
 
 # Testing
+
+
 
 # Bugs
 
 # Validator testing
 
+Extensive testing has yielded no significant issues.
+
+The website operates at peak efficiency, boasting a user-friendly and intuitive interface. Users can effortlessly navigate and accomplish their objectives without encountering any obstacles.
+
+The site is fully responsive and seamlessly functions on various browsers, including Chrome, Firefox, and Safari, as well as across different screen dimensions.
+
 # HTML
 
+ <div align="center">
+   <img src="assets/images/" width="400px"</img> 
+</div>
+
 # CSS
+
+ <div align="center">
+   <img src="assets/images/" width="400px"</img> 
+</div>
 
 # Acessibility
 Acessibility has been tested on WAVE Web Accessibility Evaluation Tool and no errors were found.
