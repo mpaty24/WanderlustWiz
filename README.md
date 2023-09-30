@@ -36,6 +36,7 @@ Welcome to Wanderlust Wiz website!
 - [CSS](#css)
 - [JavaScript](#javascript)
 - [Acessibility](#acessibility)
+  - [Lighthouse](#lighthouse)
 - [Deployment](#deployment)
 - [Credits](#credits)
   - [Media](#media)
@@ -202,6 +203,11 @@ Acessibility has been tested on WAVE Web Accessibility Evaluation Tool and no er
 <img src="assets/images/acessibility2.png" width="400px"</img> 
 </div>
  I verified the legibility and accessibility of the selected colors and fonts by subjecting them to testing.[Lighthouse DevTools]
+
+## Lighthouse
+<div align="center">
+<img src="assets/images/seo.png" width="400px"</img> 
+</div>
 
 # Deployment
 Wanderlust Wiz website is deployed to GitHub pages. The deployment steps taken:
