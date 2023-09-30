@@ -276,7 +276,7 @@ function finishQuiz() {
         <button class ="answer buttona"
         onclick=window.location.reload() 
         class="button">
-        Try again
+        You can try again
         </button>
     `;
 }
