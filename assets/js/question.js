@@ -1,4 +1,6 @@
-    const question = [
+    /** Created this page
+     * but I decided to add questions in the script JS 
+     * const question = [
         {
             question: "What is the largest country in the world by land area?",
             answers: [
@@ -94,3 +96,4 @@
         newAnswerButton.addEventListener("click", selectAnswer)
     });
     }
+*/
