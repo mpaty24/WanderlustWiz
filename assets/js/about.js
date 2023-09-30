@@ -1,4 +1,4 @@
-    const WanderlustWizMembers = [
+    const wanderlust_wiz_members = [
         {
             name: "Marcia P Fritzen",
             position: "CEO",
@@ -31,23 +31,23 @@
         aboutUs.appendChild(teamSection);
 
 
-        WanderlustWizMembers.forEach(WWmember => {
-            const WWmemberProfile = document.createElement("div");
-            WWmemberProfile.classList.add("WanderlustWizMembers");
+        wanderlust_wiz_members.forEach(WWmember => {
+            const ww_member_profile = document.createElement("div");
+            ww_member_profile.classList.add("wanderlust_wiz_members");
 
-            const WWmemberName = document.createElement("h3");
-            WWmemberName.textContent = WWmember.name;
+            const ww_member_name = document.createElement("h3");
+            ww_member_name.textContent = WWmember.name;
 
-            const WWmemberPosition = document.createElement("p");
-            WWmemberPosition.textContent = `Position: ${WWmember.position}`;
+            const ww_member_position = document.createElement("p");
+            ww_member_position.textContent = `Position: ${WWmember.position}`;
 
-            const WWmemberBio = document.createElement("p");
-            WWmemberBio.textContent = WWmember.bio;
+            const ww_member_bio = document.createElement("p");
+            ww_member_bio.textContent = WWmember.bio;
 
-            WWmemberProfile.appendChild(WWmemberName);
-            WWmemberProfile.appendChild(WWmemberPosition);
-            WWmemberProfile.appendChild(WWmemberBio);
-            teamSection.appendChild(WWmemberProfile);
+            ww_member_profile.appendChild(ww_member_name);
+            ww_member_profile.appendChild(ww_member_position);
+            ww_member_profile.appendChild(ww_member_bio);
+            teamSection.appendChild(ww_member_profile);
         });
     }
 
