@@ -141,6 +141,7 @@ const questions = [
     },
 ];
 
+/**Declare constants */
 
 const $startQuizButton = document.querySelector(".buttonplay");
 const $questionsArea = document.querySelector(".questions-area");
@@ -154,6 +155,8 @@ const $answers = document.querySelectorAll(".answer");
 
 let countdownTime = 10;
 let countdownInterval;
+
+/** Add event listeners to start quiz and display next question*/
 
 $startQuizButton.addEventListener("click", startQuiz);
 /** When the user clicks on this button, it will trigger the startQuiz function.*/
