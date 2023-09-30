@@ -2,19 +2,52 @@
 
 Welcome to Wanderlust Wiz website!
 
-
-# Wanderlust Wiz
+# WanderlustWiz
  Wanderlust Wiz is a captivating quiz website designed to ignite the wanderlust in every traveler's heart. Our platform intende to offer a diverse range of travel-themed quizzes that will transport you to exotic destinations, test your travel knowledge, and help you discover your inner travel personality. Whether you're a seasoned globetrotter or a novice explorer, Wanderlust Wiz is your passport to an exciting world of travel trivia and adventure. Join us on this virtual journey, explore the world, and challenge your wanderlust with our fun and informative quizzes!
 
+# Creator
+- Code Institute
+- Student: Marcia Frizen
+- JavaScript project
+- Year 2023
+  
+# Table of contents
+
+[Table of Contents](#table-of-contents)
+- [WanderlustWiz](#wanderlustwiz)
+- [Creator](#creator)
+- [Table of contents](#table-of-contents)
+- [Demo](#demo)
+- [Features](#features)
+- [Existing Features](#existing-features)
+- [Navigation Bar](#navigation-bar)
+- [Landing Page Image](#landing-page-image)
+- [The Footer](#the-footer)
+- [Quiz Page](#quiz-page)
+- [About us page](#about-us-page)
+- [Future features](#future-features)
+- [Technologies](#technologies)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Validator testing](#validator-testing)
+- [HTML](#html)
+  - [Index Page](#index-page)
+  - [Quiz Page](#quiz-page-1)
+- [CSS](#css)
+- [JavaScript](#javascript)
+- [Acessibility](#acessibility)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Media](#media)
+
+
+# Demo
+
 <div align="center">
-<img src="assets/images/mainpage.png" width="400px"</img> 
+<img src="assets/images/responsive.png" width="400px"</img> 
 </div>
 
-# Creator
-Code Institute
-Student: Marcia Patricia Frizen
-JavaScript project
-Year 2023
+A live demo can be found [here](https://mpaty24.github.io/WanderlustWiz/)
 
 # Features
 The application intends to attract users to play quizzes online through a wide array of engaging features designed to enhance their quiz-taking experience. These features include:
@@ -73,6 +106,7 @@ Ultimately, the user will receive a concluding message along with the opportunit
 *PlayerPeformance >= 50
 *Only Good
 *Poor performance :(
+    
 <div align="center">
 <img src="assets/images/result.png" width="400px"</img> 
 </div>
@@ -90,11 +124,33 @@ The About us page will display all users name, position and BIO.
 
 The objective is to systematically enhance the educational experience by creating a greater number of quiz modules categorized according to distinct subject matter and geographical regions, while also incorporating visual elements within the quiz interface.
 
+# Technologies
+1. HTML - To create the site structure
+2. CSS - To style and design user friendly pages 
+3. Balsamiq - To create a wireframe
+   
 # Testing
 
+I conducted comprehensive testing of the website across various web browsers, including Chrome, Firefox, and Microsoft Edge. Additionally, I ensured compatibility with mobile devices, specifically testing on a Iphone XR & PRO.
 
+I verified the site's responsiveness across different screen sizes using the developer tools' device toolbar.
 
 # Bugs
+* I enhanced text readability on the main page by increasing the opacity. This was particularly important as it overlaid a background image.
+
+* The properties on the home page were initially unreadable due to an issue with the JavaScript script that was included unnecessarily.
+
+* To prevent users from clicking multiple times on the same button, I disabled the option buttons upon clicking and set their attributes to 'disabled=true.
+
+* Upon reaching the time limit, I cleared the content on the page.
+
+* I applied an HTML formatter to improve code readability and structure.
+
+* I mistakenly duplicated the same CSS ID twice, which is against the rule that IDs must be unique.
+
+* In the JavaScript code, I corrected some variables that had started with uppercase letters.
+
+* To improve the layout, I relocated the questions to the bottom of the page.
 
 # Validator testing
 
@@ -104,7 +160,27 @@ The website operates at peak efficiency, boasting a user-friendly and intuitive 
 
 The site is fully responsive and seamlessly functions on various browsers, including Chrome, Firefox, and Safari, as well as across different screen dimensions.
 
+
 # HTML
+No errors were returned when passing through the official [W3C validator]
+
+ <div align="center">
+   <img src="assets/images/html.png" width="400px"</img> 
+</div>
+
+## Index Page
+
+No errors were returned when passing through the official [W3C validator]
+
+ <div align="center">
+   <img src="assets/images/html2.png" width="400px"</img> 
+</div>
+
+
+## Quiz Page
+
+No errors were returned when passing through the official [W3C validator]
+
 
  <div align="center">
    <img src="assets/images/" width="400px"</img> 
@@ -112,15 +188,20 @@ The site is fully responsive and seamlessly functions on various browsers, inclu
 
 # CSS
 
+ No errors were found when passing through the official [(Jigsaw) validator]
+
  <div align="center">
-   <img src="assets/images/" width="400px"</img> 
+   <img src="assets/images/css.png" width="400px"</img> 
 </div>
 
+# JavaScript
+
 # Acessibility
-Acessibility has been tested on WAVE Web Accessibility Evaluation Tool and no errors were found.
+Acessibility has been tested on WAVE Web Accessibility Evaluation Tool and no errors or contrast errors were found.
 <div align="center">
 <img src="assets/images/acessibility2.png" width="400px"</img> 
 </div>
+ I verified the legibility and accessibility of the selected colors and fonts by subjecting them to testing.[Lighthouse DevTools]
 
 # Deployment
 Wanderlust Wiz website is deployed to GitHub pages. The deployment steps taken:
