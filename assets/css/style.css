@@ -406,7 +406,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 5px;
     }
 
     .buttona:disabled {
@@ -511,27 +511,24 @@
         margin-top: 8px;
     }
 
-    /* Add some basic styles for the countdown container */
-    #countdown{
+
+    /* Style the countdown timer itself */
+    #countdown {
         top: 0;
         left: 0;
         width: 100%;
         color: black;
         text-align: center;
-    }
-
-    /* Style the countdown timer itself */
-    #countdown {
         font-size: 24px;
-        border-radius: 50%;
+        border-radius: 80%;
         width: 50px; 
         height: 50px;
         line-height: 40px;
         border: 5px solid #3498db;
         background-color: white;
-        margin-bottom: auto;
-        margin-top: auto;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         margin-left: auto;
     }
 

@@ -4,8 +4,10 @@
     const $nextQuestion = document.querySelector(".nextQuestion");
     const $answersArea = document.querySelector(".answers-area");
     const $questionQuiz = document.querySelector(".question");
-    const questionDisplay = document.getElementById('question');
+    const $questionDisplay = document.getElementById('question');
     const countdownDisplay = document.getElementById('countdown');
+    const $answers = document.querySelectorAll(".answer")
+
 
 
     let countdownTime = 10; 
@@ -36,7 +38,7 @@
 
     $questionQuiz.textContent = questions[currentQuestionIndex].question;
     questions[currentQuestionIndex].answers.forEach(answer => {
-        const newAnswerButton = document.createElement("answer")
+        const newAnswerButton = document.createElement("button")
         newAnswerButton.classList.add("buttona", "answer")
         newAnswerButton.textContent = answer.text
         if (answer.correct) {
