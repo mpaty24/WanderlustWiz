@@ -1,4 +1,8 @@
-    
+    /**Variable questions that is an array containing objects, where each object represents a question along with its corresponding answer choices 
+     *Each object within the array contains two properties: 'text,' representing the question text,
+     *and 'correct,' indicating whether the answer is correct or not.
+    */
+     
      const questions = [
         {
             question: "What is the largest country in the world by land area?",
@@ -148,17 +152,22 @@
     const countdownDisplay = document.getElementById('countdown');
     const $answers = document.querySelectorAll(".answer")
 
-
-
     let countdownTime = 10; 
     let countdownInterval;
 
     $startQuizButton.addEventListener("click", startQuiz);
+    /** When the user clicks on this button, it will trigger the startQuiz function.*/
     $nextQuestion.addEventListener("click", displaynextQuestion);
+    /** When user clicks on this button, it will trigger diplaynextQuestion function */
 
     let currentQuestionIndex = 0;
     let totalCorrect = 0
 
+    /** startQuiz function starts here
+     * Hide the quiz rules from the screen 
+     * Display the quiz questions again by removing hide
+     * Next questions show up
+     */
     function startQuiz() {
         $quizRules.classList.add("hide");
         $startQuizButton.classList.add("hide");
@@ -190,6 +199,10 @@
     })
     }
 
+    /** While there is a child element within the answer area's parent element, 
+     * we will continue removing the first child element to recheck. 
+     * This process will continue until there are no more child elements remaining inside.
+    */
     function resetState() {
         while($answersArea.firstChild) {
             $answersArea.removeChild($answersArea.firstChild);
@@ -197,6 +210,7 @@
     document.body.removeAttribute("class")
     $nextQuestion.classList.add("hide")
     }
+
 
     function pselectAnswer(event) {
     const answerClickedByPlayer = event.target
