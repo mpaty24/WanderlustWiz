@@ -7,7 +7,7 @@ Welcome to Wanderlust Wiz website!
 
 # Creator
 - Code Institute
-- Student: Marcia Frizen
+- Student: Marcia Patricia Frizen
 - JavaScript project
 - Year 2023
   

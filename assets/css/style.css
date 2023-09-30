@@ -600,6 +600,11 @@
         margin-left: auto;
     }
 
+    .time {
+        color: red;
+        font-size: 24px;
+        font-weight: 600;
+    }
 
     /*about us page */
 
