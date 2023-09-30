@@ -1,23 +1,15 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Travel Quiz Website">
-        <mena name="keywords" content="travel, quiz, ireland, dublin, world, places, memories"
+        <meta name="keywords" content="travel, quiz, ireland, dublin, world, places, memories">
         <!-- font awesome link -->
-        <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous"
-        />
-        <link
-        href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous"
-        rel="stylesheet"
-        />
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>Wanderlust Wiz</title>
     </head>
     <body>
@@ -36,113 +28,83 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-            </ul>
+                </ul>
             </nav>
         </header>
 
-            
-            <!-- User area -->
+        <br>
+        <!-- Game area start -->
 
-                <div class="user-area">
-        
-                </div>
-
-
-            <!-- Game area start -->
-
-                <div class="game-area">
-                    <div class="container">
-
-
-            <!-- Quiz rules area -->
+        <div class="game-area">
+            <div class="container">
+                <!-- Quiz rules area -->
                 <div class="quiz_rules">
-                <div class="quiz_rules_title"><span> Quiz Instructions</span></div>
-                <div class="rules_list">
-                    <ol class="list">
-                    <div class="rule"><li>Welcome to Wanderlust Wiz!</li></div>
-                    <div class="rule"><li>Start by exploring the world from the comfort of your seat. Answer questions and test your travel knowledge.</li></div>
-                    <div class="rule"><li>Your goal is to answer as many travel-related questions correctly as possible and earn points.</li></div>
-                    <div class="rule"><li>Keep in mind have only <span>60 seconds</span> to answer all 10 questions.Pay attention to the timer!</li></div>
-                    <div class="rule"><li>Select your answer by clicking or tapping on the provided options.</li></div>
-                    <div class="rule"><li>You will earn points for each correct answer. The more correct answers you provide, the higher your score will be.</li></div>
-                    <div class="rule"><li>Even if you don't know the answer to every question, have fun exploring the world through this quiz.</li></div>
-                    </ol>
+                    <div class="quiz_rules_title"><span> Quiz Instructions</span></div>
+                    <div class="rules_list">
+                        <ol class="list" id="rule">
+                            <li>Welcome to Wanderlust Wiz!</li>
+                            <li>Start by exploring the world from the comfort of your seat. Answer questions and test your travel knowledge.</li>
+                            <li>Your goal is to answer as many travel-related questions correctly as possible and earn points.</li>
+                            <li>Keep in mind have only <span>60 seconds</span> to answer all 10 questions.Pay attention to the timer!</li>
+                            <li>Select your answer by clicking or tapping on the provided options.</li>
+                            <li>You will earn points for each correct answer. The more correct answers you provide, the higher your score will be.</li>
+                            <li>Even if you don't know the answer to every question, have fun exploring the world through this quiz.</li>
+                        </ol>
 
-                <!-- start Quiz button -->
+                        <!-- start Quiz button -->
                         <div class="button"><button class="buttonplay">Start Quiz</button></div>
+                    </div>
                 </div>
-                </div>
-            
+
                 <!-- start Question area -->
 
-                    <div class="questions-area hide">
-                        <span class="question">Quiz question here</span>
-                        <br>
-                        <br>
-                        <div class="answers-area">
-                            <button type="button" class="answer buttona">Answer 1</button>
-                            <button type="button" class="answer buttona">Answer 2</button>
-                            <button type="button" class="answer buttona">Answer 3</button>
-                            <button type="button" class="answer buttona">Answer 4</button>
-                        </div>
-
-                        <div class="controls-area">
-                            <button class="nextQuestion hide">Next question</button>
-                
-                        </div>
-
-                        <div class="score-area">
-                            <p class="scores">Correct response: <span id="score">0</span></p>
-                            <p class="wrong">Incorrect response: <span id="wrong">0</span></p>
-                            <div id="countdown">0</div>
-
-                        </div>
+                <div class="questions-area hide">
+                    <span class="question">Quiz question here</span>
+                    <br>
+                    <br>
+                    <div class="answers-area">
+                        <button type="button" class="answer buttona">Answer 1</button>
+                        <button type="button" class="answer buttona">Answer 2</button>
+                        <button type="button" class="answer buttona">Answer 3</button>
+                        <button type="button" class="answer buttona">Answer 4</button>
                     </div>
+
+                    <div class="controls-area">
+                        <button class="nextQuestion hide">Next question</button>
+                    </div>
+
+                    <div class="score-area">
+                        <p class="scores">Correct response: <span id="score">0</span></p>
+                        <p class="wrong">Incorrect response: <span id="wrong">0</span></p>
+                        <div id="countdown">0</div>
                     </div>
                 </div>
-                
+            </div>
+        </div>
 
         <footer>
-            <ul class = "social-media">
+            <ul class="social-media">
                 <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page"><i class="fab fa-twitter-square"></i></a>
                 </li>
                 <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube page"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube page"><i class="fab fa-youtube-square"></i></a>
                 </li>
                 <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our TikTok page"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Visit our TikTok page"><i class="fab fa-tiktok"></i></a>
                 </li>
             </ul>
             <p class="copyright">Copyright © Wanderlust Wiz 2023</p>
         </footer>
 
-            <script>
-            function displayUsername() {
-                // Get the input field with the username value
-                const username = document.getElementById("usernameInput").value;
-                
-                // Display the username on the screen before start playing
-                const displayElement = document.getElementById("displayArea");
-                displayElement.textContent = `Your Username is: ${username}`;
-            }
-        </script>
+        
         <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
     </body>
-    </html>
-
-
-
-        
+</html>
