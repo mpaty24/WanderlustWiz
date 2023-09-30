@@ -185,6 +185,10 @@
     return finishQuiz();
     }
 
+    /**We examine the questions at the current index, and for each available answer, 
+     * we assess them individually. We dynamically generate a button element within a div to display them on the page. 
+     * We then retrieve the text content of each answer and verify whether it is correct or not*/
+
     $questionQuiz.textContent = questions[currentQuestionIndex].question;
     questions[currentQuestionIndex].answers.forEach(answer => {
         const newAnswerButton = document.createElement("button")
@@ -212,6 +216,10 @@
     }
 
 
+    /**function pselect answer check if player clicked in the correct answer or not 
+     * if player selects correct response body will turn green
+     * If player selects incorrect response body turn red
+    */
     function pselectAnswer(event) {
     const answerClickedByPlayer = event.target
 
@@ -252,7 +260,7 @@
             message = "Good Performance ;)"
             break
             case(PlayerPeformance >= 50):
-            message = "Only Good"
+            message = "Not that bad X:("
             break
             default:
             message = "Poor performance :("
@@ -273,14 +281,14 @@
     `
     }
 
-    /* get the currect score */
+    /** get the currect score */
 
     function incrementScore() {
         let oldScore = parseInt(document.getElementById("score").innerText);
         document.getElementById("score").innerText = ++oldScore;
     }
 
-    /* get the incorrect score */
+    /** get the incorrect score */
 
     function incrementWrongAnswer() {
         let oldScore = parseInt(document.getElementById("wrong").innerText);
@@ -305,7 +313,9 @@
             countdownTime--;
         }
     }
-    // Function to move to the next question
+
+    /* Function to move to the next question */
+
     function nextQuestioncount() {
         clearInterval(countdownInterval); // totally clear the countdown
         questionDisplay.textContent = `Question ${questionNumber}`;
